@@ -49,7 +49,7 @@ class Main extends Component {
             </div>
             <form onSubmit={this.addFormHandler} className='mt-12 mb-6 flex items-center special-background max-md:py-[15px] max-md:px-[18px] bg-light-veryLightGray dark:bg-dark-veryDarkDesaturatedBlue border border-light-veryLightGrayishBlue dark:border-dark-veryDarkGrayishBlue2'>
               <div className='w-6 h-6 rounded-full bg-transparent border border-light-veryLightGrayishBlue dark:border-dark-veryDarkGrayishBlue2'></div>
-              <input type="text" className='ms-5 w-[90%] bg-bgTransparent border-none outline-none text-base placeholder:text-dark-darkGrayishBlue text-dark-veryDarkDesaturatedBlue dark:text-dark-lightGrayishBlue' placeholder='Create a new todo' onChange={this.changeHandlerInput} />
+              <input type="text" className='ms-5 w-[90%] bg-bgTransparent border-none outline-none text-base placeholder:text-dark-darkGrayishBlue text-dark-veryDarkDesaturatedBlue dark:text-dark-lightGrayishBlue' placeholder='Create a new todo' onChange={this.changeHandlerInput} value={this.state.name} />
             </form>
             <ul className='shadow-shadow'>
               {data.map(item => (

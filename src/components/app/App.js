@@ -30,12 +30,14 @@ class App extends Component {
 
   onAddForm = (item) => {
     const newItem = { name: item.name, completed: false, id: uuidv4() };
-    this.setState(
-      ({ data }) => ({
-        data: [...data, newItem],
-      }),
-      () => this.saveToLocalStorage(this.state.data) 
-    );
+    if(item.name.length > 1) {
+      this.setState(
+        ({ data }) => ({
+          data: [...data, newItem],
+        }),
+        () => this.saveToLocalStorage(this.state.data) 
+      );
+    }
   };
 
   onDelete = (id) => {
