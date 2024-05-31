@@ -36,7 +36,7 @@ class Main extends Component {
     return (
       <div className='bg-desktop-light h-[35dvh] bg-no-repeat bg-cover dark:bg-desktop-dark'>
         <div className='container flex justify-center'>
-          <div className='w-full max-w-[540px] mt-[70px]'>
+          <div className='w-full max-w-[540px] mt-[70px] max-md:mt-[52px]'>
             <div className='flex justify-between items-center'>
               <h1 className='text-[#fff] font-bold text-[2.5rem] max-md:text-[30px]'>TODO</h1>
               <button id='mode-toggler' type='button' onClick={this.modeHandler} >
