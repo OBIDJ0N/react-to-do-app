@@ -19,7 +19,7 @@ class ToDoListItem extends Component {
                         null
                     )}
                 </button>
-                <p className='ms-5 max-md:text-[15px] text-base'>{name}</p>
+                <p className='ms-5 max-md:text-[15px] text-base text-light-veryDarkGrayishBlue dark:text-dark-lightGrayishBlue'>{name}</p>
                 <button className='ml-auto delete-btn' onClick={onDelete}>
                     <img src={crossIcon} className='opacity-0 duration-500 ease-out scale-0' alt="Remove item" />
                 </button>
