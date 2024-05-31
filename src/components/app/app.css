@@ -1,0 +1,46 @@
+body {
+    font-family: 'Josefin Sans';
+}
+
+.to-do:hover .check-btn {
+    background: transparent;
+    background-image: linear-gradient(90deg, white, white),
+        linear-gradient(90deg, hsl(289, 65%, 64%), hsl(226, 78%, 67%));
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    border: 1px solid transparent;
+}
+
+.dark .to-do:hover .check-btn {
+    background: transparent;
+    background-image: linear-gradient(90deg, hsl(235, 24%, 19%), hsl(235, 24%, 19%)),
+        linear-gradient(90deg, hsl(289, 65%, 64%), hsl(226, 78%, 67%));
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    border: 1px solid transparent;
+}
+
+.check-btn:has(img) {
+    background-image: linear-gradient(90deg, transparent, transparent),
+        linear-gradient(90deg, hsl(289, 65%, 64%), hsl(226, 78%, 67%));
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    border: 1px solid transparent;
+}
+
+.to-do:hover .check-btn:has(img) {
+    background: transparent;
+    background-image: linear-gradient(90deg, transparent, transparent),
+        linear-gradient(90deg, hsl(289, 65%, 64%), hsl(226, 78%, 67%));
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    border: 1px solid transparent;
+}
+
+.dark .to-do:hover .check-btn:has(img) {
+    background-image: linear-gradient(90deg, transparent, transparent),
+        linear-gradient(90deg, hsl(289, 65%, 64%), hsl(226, 78%, 67%));
+    background-clip: padding-box, border-box;
+    background-origin: border-box;
+    border: 1px solid transparent;
+}

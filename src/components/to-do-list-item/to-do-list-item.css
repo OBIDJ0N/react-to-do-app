@@ -1,0 +1,5 @@
+.to-do:hover .delete-btn img {
+    opacity: 1;
+    transform: scale(1);
+}
+
