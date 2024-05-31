@@ -18,10 +18,7 @@ class App extends Component {
     const savedData = JSON.parse(localStorage.getItem('todoList'));
     this.state = {
       data: savedData || [
-        { name: 'Meeting', completed: false, id: uuidv4() },
-        { name: 'Meeting', completed: false, id: uuidv4() },
-        { name: 'Meeting', completed: false, id: uuidv4() },
-        { name: 'Meeting', completed: false, id: uuidv4() },
+        { name: '', completed: false, id: uuidv4() },
       ],
       filter: 'All',
     };
@@ -37,7 +34,7 @@ class App extends Component {
       ({ data }) => ({
         data: [...data, newItem],
       }),
-      () => this.saveToLocalStorage(this.state.data) // Save to local storage after updating state
+      () => this.saveToLocalStorage(this.state.data) 
     );
   };
 
@@ -46,7 +43,7 @@ class App extends Component {
       ({ data }) => ({
         data: data.filter((item) => item.id !== id),
       }),
-      () => this.saveToLocalStorage(this.state.data) // Save to local storage after updating state
+      () => this.saveToLocalStorage(this.state.data) 
     );
   };
 
