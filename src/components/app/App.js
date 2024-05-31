@@ -18,7 +18,7 @@ class App extends Component {
     const savedData = JSON.parse(localStorage.getItem('todoList'));
     this.state = {
       data: savedData || [
-        { name: '', completed: false, id: uuidv4() },
+        { name: 'Welcome to TODO', completed: false, id: uuidv4() },
       ],
       filter: 'All',
     };
