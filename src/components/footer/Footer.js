@@ -9,7 +9,7 @@ const Footer = ({ dataLength, filter, btnArr, updateFilterHandler, clearComplete
           type='button'
           key={btn.name}
           onClick={() => updateFilterHandler(btn.name)}
-          className={`${filter === btn.name ? 'text-brightBlue' : 'text-dark-darkGrayishBlue'} hover:text-light-veryDarkGrayishBlue mx-2 font-bold dark:hover:text-light-veryLightGrayishBlue ${isMobile ? 'max-md:text-[10.5px]' : 'max-md:hidden'}`}
+          className={`${filter === btn.name ? 'text-brightBlue' : 'text-dark-darkGrayishBlue'} hover:text-light-veryDarkGrayishBlue mx-2 font-bold dark:hover:text-light-veryLightGrayishBlue ${isMobile ? '' : 'max-md:hidden'}`}
         >
           {btn.name}
         </button>

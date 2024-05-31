@@ -34,7 +34,7 @@ class Main extends Component {
   render() {
     const { data, onDelete, updateFilterHandler, clearCompleted, completedHandler, filter } = this.props
     return (
-      <div className='bg-desktop-light h-[35dvh] bg-no-repeat bg-cover dark:bg-desktop-dark'>
+      <div className='bg-desktop-light h-[29dvh] bg-no-repeat bg-cover dark:bg-desktop-dark'>
         <div className='container flex justify-center'>
           <div className='w-full max-w-[540px] mt-[70px] max-md:mt-[52px]'>
             <div className='flex justify-between items-center'>
