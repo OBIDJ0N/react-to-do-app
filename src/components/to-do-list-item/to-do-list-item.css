@@ -3,3 +3,7 @@
     transform: scale(1);
 }
 
+.to-do:hover .edit-btn svg {
+    transform: scale(1);
+    opacity: 1;
+}
