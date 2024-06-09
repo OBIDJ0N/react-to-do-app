@@ -7,12 +7,17 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '15px', 
+      padding: '15px',
       screens: {
-        sm: '100%', 
-        md: '100%', 
-        xl: '1470px', 
+        sm: '100%',
+        md: '100%',
+        xl: '1470px',
       },
+    },
+    screens: {
+      'xs': '400px',
+      'sm': '500px',
+      'md': '768px',
     },
     fontSize: {
       base: ['18px']
